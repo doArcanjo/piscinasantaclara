@@ -1,0 +1,8 @@
+{
+	"date_of_reading":"2018-12-01 11:45",
+	"poolData":[
+		{ "poolText": "Aprendizagem", "poolWidth": 450, "poolHeight": 150, "poolPH":  7.0, "poolCloro": 0.5, "poolTemperatura": "28.2"},
+		{ "poolText": "Competição", "poolWidth": 450, "poolHeight": 150,"poolPH":  7.2, "poolCloro": 0.6, "poolTemperatura": "29.2"}
+	]
+	
+}

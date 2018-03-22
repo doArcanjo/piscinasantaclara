@@ -1,0 +1,30 @@
+{
+  "name": "piscinasantaclara",
+  "version": "1.0.0",
+  "description": "Piscina Santa Clara project",
+  "author": "doArcanjo@geratriz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "clean": "rm -rf node_modules/"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "nuxt": "^1.0.0",
+    "vue-flex": "^2.1.0",
+    "vue-moment": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "postcss-loader": "^2.1.3"
+  }
+}
