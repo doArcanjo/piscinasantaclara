@@ -17,7 +17,24 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'}
+      /* 1 a) - first version - Working * / 
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'},
+      /* 1 a) - first version END */
+
+      /* 1 b) - first version b) - updated */ 
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js', body:true }
+      /* 1 b) - first version b) END */  
+
+      /* 1 c.1) - first version c.1) - NOT WorKING  * / 
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'}
+      /* 1 c.1) - first version c.1) END */
+      /* 1 c.2) - first version c.2) - NOT WorKING * / 
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineMax.min.js'}
+      /* 1 c.2) - first version c.2) END */ 
+      
+      /* 2) - Another lib - not working - check https://cdnjs.com/ "tween"* / 
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js'}
+      /* 2) - Another lib END */ 
     ]
   },
 
