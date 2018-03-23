@@ -2,6 +2,7 @@
   "name": "piscinasantaclara",
   "version": "1.0.0",
   "description": "Piscina Santa Clara project",
+  "homepage":"https://piscinasantaclara.tk",
   "author": "doArcanjo@geratriz",
   "private": true,
   "scripts": {
