@@ -31,7 +31,7 @@ export const contentTransformer = {
       // let dataToTransform = await import('~/content/values/posts/' + params.slug + '.json');
       // let dataToTransform = await import(`~/content/values/posts/${params.slug}.json`);
       const dataToTransform = require(`~/content/values/posts/2018-03-26-leitura.json`);
-       console.log(dataToTransform)
+       // console.log(dataToTransform)
       var transformedData = {
         "date_of_reading":dataToTransform.date_of_reading,
           "poolData":[
@@ -50,7 +50,7 @@ export const contentTransformer = {
           ]
       };
 
-      console.log(transformedData)
+      // console.log(transformedData)
       return transformedData;
     },
     JSONContentToVue: function ({dataToTransform}) {

@@ -4,7 +4,7 @@
        <section>
       <flex-col>
         <!-- <h2 class="title">Ultima Leitura</h2> -->
-        <h2 class="title">{{ date_of_reading | moment("dddd, DD MMMM YYYY, hh:mm") }}</h2>
+        <h2 class="title">{{ date_of_reading | moment("dddd, DD MMMM YYYY, HH:mm ") }}</h2>
       </flex-col>
     <flex-row justify="around">
         <flex-col
@@ -57,7 +57,11 @@ export default {
   },
   methods: {
     handleClick() {
+
       console.log(`Clicked`)
+      window.location.href = "admin"
+      // this.$app.router.push('/')
+      // $nuxt._router.push('/admin/')
     }
   },
   components: {
