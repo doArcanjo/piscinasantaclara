@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h2>Leiturras</h2>
+    <h2>Histórico</h2>
     <ul>
       <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="post._path">
@@ -12,24 +12,18 @@
 </template>
 
 <script>
-import AppLogo from '~/components/BaseLogo.vue';
-
+import { contentLoader } from '~/assets/core/mixins/content-loader';
+import { contentTransformer } from '~/assets/core/mixins/content-transformer';
 export default {
-  components: {
-    AppLogo
-  },
+  mixins: [contentLoader,contentTransformer],
   data() {
-    // Using webpacks context to gather all  files from a folder
-    //let targetCollection = 'blog'
-    let targetCollection = 'values'
-    const context = require.context(`~/content/values/posts/`, false, /\.json$/);
-
-    const posts = context.keys().map(key => ({
-      ...context(key),
-      _path: `/values/${key.replace('.json', '').replace('./', '')}`
-    }));
-
-    return { posts };
+    // Using webpacks context to gather all files from a folder
+    // const posts = this.getContentList('~/content/values/posts/', 'json', '/values');
+    const anotherData1= this.postToVue({url:`nada`})
+    // const posts = this.getContentList('~/content/values/posts/', 'json', 'values');
+    // console.log(posts);
+    // return {posts};
+    return {};
   }
 };
 </script>
@@ -42,7 +36,6 @@ export default {
   align-items: center;
   text-align: center;
 }
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
@@ -52,7 +45,6 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
 }
-
 .subtitle {
   font-weight: 300;
   font-size: 42px;
@@ -60,7 +52,6 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-
 .links {
   padding-top: 15px;
 }

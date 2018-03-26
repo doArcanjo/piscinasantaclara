@@ -1,6 +1,19 @@
 <template>
   <article>
     <h1>{{ title }}</h1>
+    <h2>Data de Leitura{{date_of_reading}}</h2>
+    <h2>{{poolText_1}}</h2>
+    <h2>{{poolWidth_1}}</h2>
+    <h2>{{poolHeight_1}}</h2>
+    <h2>{{poolPH_1}}</h2>
+    <h2>{{poolCloro_1}}</h2>
+    <h2>{{poolTemperatura_1}}</h2>
+    <h2>{{poolText_2}}</h2>
+    <h2>{{poolWidth_2}}</h2>
+    <h2>{{poolHeight_2}}</h2>
+    <h2>{{poolPH_2}}</h2>
+    <h2>{{poolCloro_2}}</h2>
+    <h2>{{poolTemperatura_2}}</h2>
   </article>
 </template>
 
