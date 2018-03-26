@@ -2,11 +2,11 @@
   <section class="container">
     <h2>Histórico</h2>
     <ul>
-      <li v-for="post in posts" :key="post.date">
+      <!-- <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="post._path">
           {{ post.title }}
         </nuxt-link>
-      </li>
+      </li> -->
     </ul>
   </section>
 </template>

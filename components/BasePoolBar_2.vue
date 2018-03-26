@@ -3,7 +3,7 @@
   <h1>Piscina de {{poolText}}</h1>
   <h2>PH: {{poolPH}}</h2>
   <h2>Temperatura: {{poolTemperatura}} º</h2>
-  <h2>Cloro: {{poolPH}}</h2>
+  <h2>Cloro: {{poolCloro}}</h2>
 </div>
 </template>
 <script>

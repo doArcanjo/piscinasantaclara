@@ -39,10 +39,9 @@ import Wave from '~/components/TheWave.vue'
 import PoolList from '~/components/BasePoolList_2.vue'
 import { contentTransformer } from '~/assets/core/mixins/content-transformer';
 
-import dataToTransform from '~/content/values/posts/2018-03-26-leitura.json';
 
 /* Used before */
- import lastReadingData from '~/assets/mock_reading' 
+ // import lastReadingData from '~/assets/mock_reading' 
  // in data() method use:
  //poolData: lastReadingData.poolData
 /* */
@@ -50,26 +49,12 @@ export default {
   mixins: [contentTransformer],
    data() {
     // const newReadingData= this.postToVue({url:`nada`})
-    const anotherData= this.postToVue({dataToTransform})
-    console.error("anotherData")
-    console.log(anotherData)
-    const newReadingData= this.JSONContentToVue({dataToTransform})
-    console.error("lastReadingData")
-    console.log(lastReadingData)
-    console.error("newReadingData")
-    console.log(newReadingData)
+    const newReadingData= this.postToVue({url:`nada`})
       return {
           date_of_reading: newReadingData.date_of_reading,
           poolData: newReadingData.poolData
       }
   },
-  //  asyncData (context) {
-  //   let newReadingData = this.postToVue({url:`nada`})
-  //   return {
-  //         date_of_reading: newReadingData.date_of_reading,
-  //         poolData: newReadingData.poolData
-  //     }
-  // },
   methods: {
     handleClick() {
       console.log(`Clicked`)

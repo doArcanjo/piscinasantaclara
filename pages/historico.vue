@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h2>Leiturras</h2>
+    <h2>Leituras</h2>
     <ul>
       <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="post._path">

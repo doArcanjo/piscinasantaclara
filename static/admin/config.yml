@@ -22,13 +22,13 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
     fields: # The fields for each document, usually in front matter
-      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Titulo", name: "title", widget: "string", default: "Leitura"}
       - {label: "Data da leitura", name: "date_of_reading", widget: "datetime"}
-      - {label: "Piscina", name: "poolText_1", widget: "string"}
-      - {label: "PH", name: "poolPH_1", widget: "string"}
-      - {label: "Cloro", name: "poolCloro_1", widget: "string"}
-      - {label: "Temperatura", name: "poolTemperatura_1", widget: "string"}
-      - {label: "Piscina", name: "poolText_2", widget: "string"}
-      - {label: "PH", name: "poolPH_2", widget: "string"}
-      - {label: "Cloro", name: "poolCloro_2", widget: "string"}
-      - {label: "Temperatura", name: "poolTemperatura_2", widget: "string"}
+      - {label: "Piscina", name: "poolText_1", widget: "string", default: "Aprendizagem"}
+      - {label: "PH", name: "poolPH_1", widget: "string",default: "7.1"}
+      - {label: "Cloro", name: "poolCloro_1", widget: "string", default: "0.5"}
+      - {label: "Temperatura", name: "poolTemperatura_1", widget: "string", default: "18"}
+      - {label: "Piscina", name: "poolText_2", widget: "string", default: "Competição"}
+      - {label: "PH", name: "poolPH_2", widget: "string", default: "7.0"}
+      - {label: "Cloro", name: "poolCloro_2", widget: "string", default: "0.5"}
+      - {label: "Temperatura", name: "poolTemperatura_2", widget: "string", default: "18"}
