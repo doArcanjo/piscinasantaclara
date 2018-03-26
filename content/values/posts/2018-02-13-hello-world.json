@@ -1,0 +1,18 @@
+{
+  "title": "Hello world",
+  "date": "2018-02-13T19:32:44.767Z",
+  "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea **takimata sanctus** est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "date_of_reading":"2018-12-01 11:45",
+  "poolText": "Aprendizagem", 
+  "poolWidth": 450, 
+  "poolHeight": 150, 
+  "poolPH":  7.0, 
+  "poolCloro": 0.5, 
+  "poolTemperatura": "28.2",
+  "poolText": "Competição", 
+   "poolWidth": 450, 
+   "poolHeight": 150,
+   "poolPH":  7.2, 
+   "poolCloro": 0.6,
+   "poolTemperatura": "29.2"
+}
