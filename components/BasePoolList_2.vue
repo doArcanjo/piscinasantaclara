@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BasePoolBar from '~/components/BasePoolBar_1.vue'
+import BasePoolBar from '~/components/BasePoolBar_3.vue'
 export default {
   data: function () {
   	return {}

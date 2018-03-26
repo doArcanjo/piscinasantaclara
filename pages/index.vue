@@ -36,7 +36,7 @@ import Company from '~/components/company/BaseCompany.vue'
 import Pool from '~/components/pool/pool2.vue' 
 import Logo from '~/components/BaseLogo.vue' 
 import Wave from '~/components/TheWave.vue'
-import PoolList from '~/components/BasePoolList.vue'
+import PoolList from '~/components/BasePoolList_2.vue'
 import lastReadingData from '~/assets/mock_reading' 
 export default {
    data() {

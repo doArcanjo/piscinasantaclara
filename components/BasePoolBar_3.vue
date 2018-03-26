@@ -15,14 +15,6 @@
                   type: String,
                   default: 'BSP-Piscina'
               },
-              poolWidth:{
-                type: Number,
-                default: 250
-              },
-              poolHeight:{
-                type: Number,
-                default: 150
-              },
               poolPH:{
                 type: [Number,String],
                 default: 0.9
@@ -44,25 +36,7 @@
         data() {
             return {}
         },
-        computed:{
-          svgWidth(){
-            return `${this.poolWidth + kWidth}`
 
-          },
-
-          svgHeight(){
-            return `${this.poolHeight + kWidth}`
-
-          },
-          textYPosition(){
-            return `${(this.poolHeight)/2}` 
-
-          },
-          textXPosition(){
-            return `${(this.poolWidth)/2}` 
-
-          }
-        }
    }     
 </script>
 <style scoped>
