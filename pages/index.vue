@@ -18,7 +18,7 @@
       <flex-col align-v="center">
         <PoolList v-bind:poolData="poolData"/> 
           <flex-row  justify="around" class="company_logo">
-              <Company></Company>  
+              <Company v-bind="clientConfig"></Company>  
           </flex-row>
       </flex-col>
     </flex-row>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-
+import clientConfig from '~/content/config/default_client' 
 import Company from '~/components/company/BaseCompany.vue' 
 import Pool from '~/components/pool/pool2.vue' 
 import Logo from '~/components/BaseLogo.vue' 
@@ -52,7 +52,8 @@ export default {
     const newReadingData= this.postToVue({url:`nada`})
       return {
           date_of_reading: newReadingData.date_of_reading,
-          poolData: newReadingData.poolData
+          poolData: newReadingData.poolData,
+          clientConfig
       }
   },
   methods: {
