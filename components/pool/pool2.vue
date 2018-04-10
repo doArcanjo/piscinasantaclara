@@ -4,7 +4,7 @@
   <defs>
     <defs>
       <filter id="filter-ripple-2">
-        <feImage xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/ripple.png" x="600" y="450" width="0" height="0" result="ripple"></feImage>
+        <feImage xlink:href="/ripple.png" x="600" y="450" width="0" height="0" result="ripple"></feImage>
         <feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="20" result="dm" />
         <feComposite operator="in" in2="ripple"></feComposite>
         <feComposite in2="SourceGraphic"></feComposite>

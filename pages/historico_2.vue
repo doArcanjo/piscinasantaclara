@@ -1,29 +1,25 @@
 <template>
   <section class="container">
     <h2>Histórico</h2>
-    <ul>
-      <!-- <li v-for="post in posts" :key="post.date">
-        <nuxt-link :to="post._path">
+     <ul>
+      <li v-for="post in posts" :key="post.date">
+        <nuxt-link :to="post._meta.path">
           {{ post.title }}
         </nuxt-link>
-      </li> -->
+      </li>
     </ul>
   </section>
 </template>
 
 <script>
 import { contentLoader } from '~/assets/core/mixins/content-loader';
-import { contentTransformer } from '~/assets/core/mixins/content-transformer';
+
 export default {
-  mixins: [contentLoader,contentTransformer],
+  mixins: [contentLoader],
   data() {
-    // Using webpacks context to gather all files from a folder
-    // const posts = this.getContentList('~/content/values/posts/', 'json', '/values');
-    const anotherData1= this.postToVue({url:`nada`})
-    // const posts = this.getContentList('~/content/values/posts/', 'json', 'values');
-    // console.log(posts);
-    // return {posts};
-    return {};
+    const posts = this.queryContentAll('/values/posts/', '/values');
+    //  console.log(posts);
+    return { posts };
   }
 };
 </script>

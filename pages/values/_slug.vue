@@ -14,15 +14,14 @@
 </template>
 
 <script>
+import { contentLoader } from '~/assets/core/mixins/content-loader';
 export default {
+  mixins: [contentLoader],
   async asyncData({ params }) {
-    // const postPromise = process.BROWSER_BUILD
-    //   ? import('~/content/blog/posts/' + params.slug + '.json')
-    //   : Promise.resolve(
-    //       require('~/content/blog/posts/' + params.slug + '.json')
-    //     );
-
-    let post = await import('~/content/values/posts/' + params.slug + '.json');
+    const post = await contentLoader.methods.queryContent(
+      'values/posts',
+      params.slug
+    );
     return post;
   }
 };
