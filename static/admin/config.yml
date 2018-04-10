@@ -25,10 +25,10 @@ collections:
       - {label: "Titulo", name: "title", widget: "string", default: "Leitura"}
       - {label: "Data da leitura", name: "date_of_reading", widget: "datetime"}
       - {label: "Piscina", name: "poolText_1", widget: "string", default: "Aprendizagem"}
-      - {label: "PH", name: "poolPH_1", widget: "string",default: "7.1"}
-      - {label: "Cloro", name: "poolCloro_1", widget: "string", default: "0.5"}
-      - {label: "Temperatura", name: "poolTemperatura_1", widget: "string", default: "18"}
+      - {label: "PH", name: "poolPH_1", widget: "string",default: "7.4"}
+      - {label: "Cloro", name: "poolCloro_1", widget: "string", default: "1,12"}
+      - {label: "Temperatura", name: "poolTemperatura_1", widget: "string", default: "31,5"}
       - {label: "Piscina", name: "poolText_2", widget: "string", default: "Competição"}
-      - {label: "PH", name: "poolPH_2", widget: "string", default: "7.0"}
-      - {label: "Cloro", name: "poolCloro_2", widget: "string", default: "0.5"}
-      - {label: "Temperatura", name: "poolTemperatura_2", widget: "string", default: "18"}
+      - {label: "PH", name: "poolPH_2", widget: "string", default: "7.5"}
+      - {label: "Cloro", name: "poolCloro_2", widget: "string", default: "1,08"}
+      - {label: "Temperatura", name: "poolTemperatura_2", widget: "string", default: "29,8"}
