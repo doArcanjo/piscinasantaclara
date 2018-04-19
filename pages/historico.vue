@@ -4,7 +4,7 @@
     <ul>
       <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="post._path">
-          {{ post.title }}
+          {{ post.title }} @ {{ post.date_of_reading | moment("dddd, DD MMMM YYYY - HH:mm") }}
         </nuxt-link>
       </li>
     </ul>
@@ -40,7 +40,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .title {

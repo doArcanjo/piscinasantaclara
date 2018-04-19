@@ -3,8 +3,7 @@
     <flex-col tag="main" >
        <section>
       <flex-col>
-        <!-- <h2 class="title">Ultima Leitura</h2> -->
-        <h2 class="title">{{ date_of_reading | moment("dddd, DD MMMM YYYY, HH:mm ") }}</h2>
+        <h2 class="title">{{ date_of_reading | moment(currentDatetimeFormat()) }}</h2>
       </flex-col>
     <flex-row justify="around">
         <flex-col
@@ -57,6 +56,10 @@ export default {
       }
   },
   methods: {
+    currentDatetimeFormat(){
+      let current_format=clientConfig.current_datetime_format;
+      return clientConfig[current_format]
+    },
     handleClick() {
 
       console.log(`Clicked`)
