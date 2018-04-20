@@ -22,7 +22,9 @@
       </flex-col>
     </flex-row>
     <flex-row>
-        <Wave/> 
+        <div v-if="hasWave()" >
+          <Wave/>
+        </div>  
     </flex-row>
     </section>
     </flex-col>
@@ -56,6 +58,10 @@ export default {
       }
   },
   methods: {
+
+    hasWave(){
+      return clientConfig.has_wave;
+    },
     currentDatetimeFormat(){
       let current_format=clientConfig.current_datetime_format;
       return clientConfig[current_format]

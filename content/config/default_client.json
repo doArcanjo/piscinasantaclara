@@ -4,5 +4,6 @@
     "ClientLogoWidth": "20%",
     "current_datetime_format": "date_only_format",
     "date_only_format":"dddd, DD MMMM YYYY",
-    "date_time_format":"dddd, DD MMMM YYYY, HH:mm "
+    "date_time_format":"dddd, DD MMMM YYYY, HH:mm ",
+    "has_wave":false
 }
