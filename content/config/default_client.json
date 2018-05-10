@@ -2,7 +2,8 @@
 	"ClientName": "Piscinas de Santa Clara",
     "ClientLogoSrc": "@/assets/logo_client.jpg",
     "ClientLogoWidth": "20%",
-    "current_datetime_format": "date_only_format",
+    "current_datetime_format": "dont_show_date_or_time",
+    "dont_show_date_or_time":" ",
     "date_only_format":"dddd, DD MMMM YYYY",
     "date_time_format":"dddd, DD MMMM YYYY, HH:mm ",
     "has_wave":false
