@@ -27,7 +27,7 @@ export default {
     const posts = context.keys().map(key => ({
       ...context(key),
       _path: `/values/${key.replace('.json', '').replace('./', '')}`
-    }));
+    })).reverse();
 
     return { posts };
   }
