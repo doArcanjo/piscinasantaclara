@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2>Leituras</h2>
-    <a @click="csvExport(posts)">CSV</a>
+    <!-- <a @click="csvExport(posts)">CSV</a> -->
     <ul>
       <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="post._path">
