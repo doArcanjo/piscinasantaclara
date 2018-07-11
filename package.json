@@ -17,6 +17,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/pwa": "^2.0.8",
+    "alasql": "^0.4.6",
     "nuxt": "^1.0.0",
     "vue-flex": "^2.1.0",
     "vue-moment": "^3.2.0"

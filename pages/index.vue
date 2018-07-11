@@ -81,7 +81,7 @@ export default {
     PoolList,
     Logo
   }
-}
+};
 </script>
 
 <style>
