@@ -1,12 +1,12 @@
 {
-  "poolPH_1": "7.4",
+  "poolPH_1": "7.22",
   "poolTemperatura_1": "31",
-  "poolPH_2": "7.30",
-  "poolTemperatura_2": "30",
-  "date_of_reading": "2018-10-10T12:01:00+01:00",
+  "poolPH_2": "7.81",
+  "poolTemperatura_2": "30,7",
+  "date_of_reading": "2018-10-26T12:01:00+01:00",
   "title": "Leitura",
-  "poolCloro_1": "0,87",
-  "poolCloro_2": "0,46",
+  "poolCloro_1": "0,63",
+  "poolCloro_2": "0,51",
   "poolText_1": "Aprendizagem",
   "poolText_2": "Competição"
 }
